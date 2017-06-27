@@ -1,0 +1,1 @@
+a:6:{s:9:"huang_min";s:3:"300";s:9:"huang_max";s:4:"3000";s:8:"hong_min";s:3:"300";s:8:"hong_max";s:4:"3000";s:7:"hei_min";s:4:"3000";s:7:"hei_max";s:5:"30000";}

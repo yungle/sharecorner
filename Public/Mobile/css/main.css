@@ -1,0 +1,1303 @@
+﻿@import "bootstrap.css";
+
+
+
+#app{
+
+    display: block;
+
+    -webkit-box-flex: 1;
+
+    -moz-box-flex: 1;
+
+    /* -webkit-flex: 1; */
+
+    -ms-flex: 1;
+
+    flex: 1;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+
+.clearfix {
+
+    *zoom: 1;
+
+}
+
+
+
+.clearfix:before,
+
+
+
+.clearfix:after {
+
+
+
+    display: table;
+
+
+
+    line-height: 0;
+
+
+
+    content: "";
+
+
+
+}
+
+
+
+
+
+.clearfix:after {
+
+
+
+    clear: both;
+
+
+
+}
+
+
+
+.farm{
+
+    width:10rem;
+
+    height: 14.45rem;
+
+   /* height: 17.75rem;*/
+
+    background: url("../images/farm.png") no-repeat;
+
+    background-size:contain;
+
+    position: relative;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+}
+
+
+
+.farm-mask{
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: white;
+
+    opacity: 0.2;
+
+    z-index: 50;
+
+}
+
+
+
+.loading{
+
+    background: url("../images/loading.gif") no-repeat 0 0;
+
+    width: 32px;
+
+    height: 32px;
+
+    margin: 275px auto;
+
+}
+
+
+
+
+
+.farm-tool{
+
+    min-height: 10px;
+
+    position: absolute;
+
+    left: 0.26rem;
+
+    bottom: 0.56rem;
+
+    z-index: 2;
+
+}
+
+
+
+.land>.beans{
+
+    position: absolute;
+
+    width: 90px;
+
+    height: 18px;
+
+    font-family: 'Microsoft Yahei', '΢���ź�';
+
+    text-align: center;
+
+    font-size: 12px;
+
+    display: none;
+	    border-radius: 10px;
+    z-index: 11;
+    background-color: rgba(255, 255, 255, 0.74);
+    left: 5px;
+    top: 15px;
+
+}
+
+.farm[state=mouse1] .land{
+
+    cursor: url("../other/mouse1.ico"),auto;
+
+}
+
+.farm[state=mouse2] .land{
+
+    cursor: url("../other/mouse2.ico"),auto;
+
+}
+
+.farm[state=mouse3] .land{
+
+    cursor: url("../other/mouse3.ico"),auto;
+
+}
+
+.farm[state=mouse4] .land{
+
+    cursor: url("../other/mouse4.ico"),auto;
+
+}
+
+
+
+.farm[state=mouse5] .land{
+
+    cursor: url("../other/mouse5.ico"),auto;
+
+}
+
+
+
+.farm[state=mouse6] .land{
+
+    cursor: url("../other/mouse6.ico"),auto;
+
+}
+
+
+
+
+
+
+
+.land:hover>.beans{
+
+    display: block;
+
+    z-index: 11;
+
+}
+
+
+
+
+
+.fertilizer{
+
+    top: -999px;
+
+    left: -999px;
+
+    position: absolute;
+
+    z-index: 6;
+
+    width: 3.93rem;
+
+    height: 1.92rem;
+
+    background: url("../images/fertilizer.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+
+
+.bee{
+
+    top: -999px;
+
+    left: -999px;
+
+    position: absolute;
+
+    z-index: 6;
+
+    background: url("../images/bee.png") no-repeat;
+
+    background-size: contain;
+
+    width: 2.45rem;
+
+    height:1.56rem;
+
+}
+
+.husky{
+
+    top: 2rem;
+
+    left: 3.7rem;
+
+    position: absolute;
+
+    background: url("../images/husky.gif") no-repeat;
+
+    background-size: contain;
+
+    width: 1.5rem;
+
+    height: 1.72rem;
+
+    display: block;
+
+    -moz-transform:scaleX(-1);
+
+    -webkit-transform:scaleX(-1);
+
+    -o-transform:scaleX(-1);
+
+    transform:scaleX(-1);
+
+}
+
+.bigdog{
+
+    top: 2.6rem;
+
+    left: 6rem;
+
+    position: absolute;
+
+    background: url("../images/bigdog.GIF") no-repeat;
+
+    background-size: contain;
+
+    width: 1.56rem;
+
+    height: 1.56rem;
+
+    display: block;
+
+}
+
+
+
+.scarecrow{
+
+    top: 40px;
+
+    left: -20px;
+
+    position: absolute;
+
+    z-index: 0;
+
+    width: 1.45rem;
+
+    height: 1.62rem;
+
+}
+
+.scarecrow:before{
+
+    content: "金猴";
+
+    text-align: center;
+
+   
+
+    margin-top: 1.53rem;
+
+    /* background-color: black;*/
+
+    border-radius: 3px;
+
+    line-height: 24px;
+
+    color: white;
+     display: block;
+
+}
+
+
+
+
+
+.scarecrow-socket[inserted=true]>.scarecrow{
+
+    background: url("../images/scarecrow.png") no-repeat;
+
+    background-size: contain;
+
+    cursor: url("../other/mouse4.ico"),auto;
+
+}
+
+
+
+
+
+.scarecrow-socket{
+
+    cursor: url("../other/scarecrow.ico"),auto;
+
+}
+
+
+
+.scarecrow-socket.unable{
+
+    cursor: url("../other/scarecrow-unable.ico"),auto !important;
+
+}
+
+
+
+.scarecrow-socket{
+
+    position: absolute;
+
+}
+
+
+
+
+
+
+
+.scarecrow-socket[name=IsLocationOnePlugin]{
+
+    top: 3.05rem;
+
+    left: 0.3rem;
+
+    z-index: 6;
+
+}
+
+.scarecrow-socket[name=IsLocationTwoPlugin]{
+
+    top: 6.5rem;
+
+    left: 0.9rem;
+
+    z-index: 6;
+
+}
+
+.scarecrow-socket[name=IsLocationThreePlugin]{
+
+    top: 6.8rem;
+
+    left: 8.9rem;
+
+    z-index: 6;
+
+}
+
+.scarecrow-socket[name=IsLocationFourPlugin]{
+
+    top: 7.7rem;
+
+    left: 3.6rem;
+
+    z-index: 6;
+
+}
+
+
+
+
+
+.land[lever=land_lever_1]{
+
+    background: url("../images/land1.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.land[lever=land_lever_2]{
+
+    background: url("../images/land2.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.land[lever=land_lever_3]{
+
+    background: url("../images/land3.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+
+
+.land>.tree{
+
+    position: absolute;
+
+    width: 1.253333333333333rem;
+
+    height: 1.253333333333333rem;
+
+    left: 0.5rem;
+
+    top: -0.65rem;
+	
+	z-index: 10;
+
+}
+
+
+
+
+
+.land>.tree[lever=tree_lever_1]{
+
+    background: url("../images/tree1.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.land>.tree[lever=tree_lever_2]{
+
+    background: url("../images/tree2.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.land>.tree[lever=tree_lever_3]{
+
+    background: url("../images/tree3.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.land>.tree[lever=tree_lever_4]{
+
+    background: url("../images/tree4.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.land>.tree[lever=tree_lever_6]{
+
+    background: url("../images/tree6.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.land>.tree[lever=tree_lever_5]{
+
+    background: url("../images/tree5.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.land>.tree[lever=tree_lever_7]{
+
+    background: url("../images/tree7.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+.land>.tree[lever=tree_lever_8]{
+
+    background: url("../images/tree8.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+.land>.tree[lever=tree_lever_9]{
+
+    background: url("../images/tree9.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+.land>.tree[lever=tree_lever_10]{
+
+    background: url("../images/tree10.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+
+
+
+
+.farm-floor{
+
+    width: 9.16rem;
+
+    height: 4.86rem;
+
+    position: absolute;
+
+    top: 4.86rem;
+
+    left: 0.4rem;
+
+    z-index: 5;
+
+}
+
+
+
+.land{
+
+    position: absolute;
+
+    width: 2.29rem;
+
+    height: 1.16rem;
+
+}
+
+.land .beans:hover{
+
+    z-index: 9;
+
+}
+
+
+
+.farm-tool-list{
+
+    width: 1.34rem;
+
+    height: 1.04rem;
+
+    float: left;
+
+    margin-left: 0.46rem;
+
+    cursor: pointer;
+
+}
+
+
+
+.farm-tool-home{
+
+    width: 1.04rem;
+
+    height: 1.04rem;
+
+    float: right;
+
+    margin-left: 0.46rem;
+
+    margin-bottom: 0.26rem;
+
+    cursor: pointer;
+
+    background: url("../images/home.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+.farm-tool-list[tool="1"]{
+
+    background: url("../images/tool_1.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.farm[state=mouse1] .farm-tool-list[tool="1"]{
+
+    cursor: url("../other/mouse1.ico"),auto;
+
+}
+
+.farm-tool-list.unable[tool="1"]{
+
+    background: url("../images/tool_un_1.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+
+
+.farm-tool-list[tool="2"]{
+
+    background: url("../images/tool_2.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.farm[state=mouse2] .farm-tool-list[tool="2"]{
+
+    cursor: url("../other/mouse2.ico"),auto;
+
+}
+
+.farm-tool-list.unable[tool="2"]{
+
+    background: url("../images/tool_un_2.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+
+
+.farm-tool-list[tool="3"]{
+
+    background: url("../images/tool_3.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+.farm[state=mouse3] .farm-tool-list[tool="3"]{
+
+    cursor: url("../other/mouse3.ico"),auto;
+
+}
+
+.farm-tool-list.unable[tool="3"]{
+
+    background: url("../images/tool_un_3.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+
+
+.farm-tool-list[tool="4"]{
+
+    background: url("../images/tool_4.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+.farm[state=mouse4] .farm-tool-list[tool="4"]{
+
+    cursor: url("../other/mouse4.ico"),auto;
+
+}
+
+.farm-tool-list.unable[tool="4"]{
+
+    background: url("../images/tool_un_4.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+
+
+.farm[state=mouse5] .farm-tool-list[tool="5"]{
+
+    cursor: url("../other/mouse5.ico"),auto;
+
+}
+
+
+
+.farm-tool-list[tool="5"]{
+
+    background: url("../images/tool_5.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+.farm-tool-list.unable[tool="5"]{
+
+    background: url("../images/tool_un_5.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+.farm-tool-list[tool="6"]{
+
+    background: url("../images/tool_6.png") no-repeat;
+
+    background-size: contain;
+
+}
+
+
+
+.farm-information{
+
+  /*  width: 800px;
+
+    position: absolute;*/
+
+    /* left: 50%;*/
+
+}
+
+
+
+
+
+.farm-information-row{
+
+    padding: 0.13rem 0 0.13rem 0;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    background:rgba(45,120,181,0.6);
+
+}
+
+.farm-information-row > .row >div{
+
+    text-align: left;
+    float: left;
+width: 33.33%;
+
+}
+
+.scarecrow:before{
+
+    color: white;
+
+}
+.scarecrow img{width: 60px;height: 60px;top: -4px;position: inherit;}
+
+
+
+.farm-information-row{
+
+ /*   margin-top: 10px;
+
+    width: 100%;*/
+
+    line-height: 1;
+
+    color: #fff;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    vertical-align: baseline;
+
+    border-radius: .25em;
+
+    top: 5px;
+
+    height: 25px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    background: rgb(100, 100, 100)\0;
+
+    line-height: 0.4rem;
+
+    display: table;
+
+}
+
+
+
+
+
+
+
+.farm-row{
+
+    padding: 0px 2px;
+
+}
+
+
+
+.f-title{
+
+    color: white;
+
+    font-size: 0.4rem;
+
+    font-family: "FangSong";
+
+    color: #ff8d12;
+
+    display: inline-block;
+
+    text-align: right;
+
+}
+
+
+
+.f-val{
+
+    font-size: 0.4rem;
+
+    text-align: left;
+
+    color: white;
+
+}
+
+.farm-row{
+
+    min-width: 180px;
+
+    display: inline-block;
+
+    text-align: left;
+
+    padding: 5px 10px;
+
+    float: left;
+
+
+
+}
+
+.farm-row-list{
+
+    padding: 5px 10px;
+
+}
+
+
+
+
+
+
+
+.farm-warning{
+
+    padding: .2em .6em .3em;
+
+    font-size: 75%;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    color: #fff;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    vertical-align: baseline;
+
+    border-radius: .25em;
+
+    position: absolute;
+
+    top: 1.6rem;
+
+    left: 50%;
+
+    height: 25px;
+
+    width: 300px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    margin-left: -150px;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    background: rgb(80, 80, 80)\0;
+
+    line-height: 25px;
+
+}
+
+
+
+.farm-dialog{
+
+    background: url("../images/tipTop.png") no-repeat;
+
+    background-size: contain;
+
+    width: 203px;
+
+    height: 102px;
+
+    position: absolute;
+
+    padding: 10px;
+
+    z-index: 101;
+
+    font-family: "Microsoft Yahei";
+
+    font-size: 12px;
+
+}
+
+.farm-errors{
+
+    display: inline-block;
+
+    padding-left: 30px;
+
+    color: red;
+
+}
+
+.farm-close{
+
+    width: 15px;
+
+    height: 15px;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    position: absolute;
+
+    left: 40px;
+
+    top: 18px;
+
+}
+
+.farm-sub{
+
+
+
+}
+
+.farm-dialog-top{
+
+    height: 20px;
+
+    font-size: 15px;
+
+    color: #5d4028;
+
+    line-height: 24px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    margin: 5px;
+
+}
+
+.farm-dialog-content{
+
+    margin: 10px 25px;
+
+    width: 150px;
+
+    color: #dd9c42;
+
+}
+
+.farm-dialog input[type=text]{
+
+    border:1px solid white;
+
+    text-rendering: auto;
+
+    color: initial;
+
+    letter-spacing: normal;
+
+    word-spacing: normal;
+
+    text-transform: none;
+
+    text-indent: 0px;
+
+    text-shadow: none;
+
+    display: inline-block;
+
+    text-align: start;
+
+    margin: 0em 0em 0em 0em;
+
+    font: 13.3333px Arial;
+
+    -webkit-user-select: text;
+
+    -webkit-writing-mode: horizontal-tb;
+
+    -webkit-appearance: textfield;
+
+    -webkit-rtl-ordering: logical;
+
+    -webkit-user-select: text;
+
+
+
+
+
+    cursor: auto;
+
+    padding: 1px;
+
+    border: 2px inset;
+
+    /*height: 20px;*/
+
+    width: 60px;
+
+    padding: 2px 5px;
+
+}
+
+
+
+.land[groundnumber="1"]{
+
+    left: 0rem;
+
+    top: 1.23rem;
+
+}
+
+.land[groundnumber="2"]{
+
+    left: 1.15rem;
+
+    top: 1.8rem;
+
+}
+
+.land[groundnumber="3"]{
+
+    left: 2.3rem;
+
+    top: 2.38rem;
+
+}
+
+.land[groundnumber="4"]{
+
+    left: 3.45rem;
+
+    top: 2.96rem;
+
+}
+
+.land[groundnumber="5"]{
+
+    left: 4.6rem;
+
+    top: 3.55rem;
+
+}
+
+
+
+.land[groundnumber="6"]{
+
+    left: 1.2rem;
+
+    top: 0.65rem;
+
+}
+
+
+
+.land[groundnumber="7"]{
+
+    left: 2.3rem;
+
+    top: 1.2rem;
+
+
+
+
+
+}
+
+.land[groundnumber="8"]{
+
+    left: 3.46rem;
+
+    top: 1.77rem;
+
+}
+
+.land[groundnumber="9"]{
+
+    left: 4.6rem;
+
+    top: 2.35rem;
+
+}
+
+.land[groundnumber="10"]{
+
+    left: 5.77rem;
+
+    top: 2.93rem;
+
+}
+
+
+
+.land[groundnumber="11"]{
+
+    left: 2.40rem;
+
+    top: 0.05rem;
+
+}
+
+
+
+.land[groundnumber="12"]{
+
+    left: 3.54rem;
+
+    top: 0.63rem;
+
+}
+
+.land[groundnumber="13"]{
+
+    left: 4.7rem;
+
+    top: 1.2rem;
+
+}
+
+.land[groundnumber="14"]{
+
+    left: 5.77rem;
+
+    top: 1.75rem;
+
+}
+
+.land[groundnumber="15"]{
+
+    left: 6.9rem;
+
+    top: 2.33rem;
+
+}
+
+
+
+.farm-tool-list{
+
+    position: relative;
+
+}
+
+.farm-tool-list.tip:before{
+
+    content: "";
+
+    position: absolute;
+
+    top: -0.2rem;
+
+    left: 0.46rem;
+
+    width: 0.26rem;
+
+    height:0.26rem;
+
+    background: url("../images/tip.gif") no-repeat;
+
+    background-size: contain;
+
+}
+
+.f-fn-red{
+
+    color: red;
+
+}
+

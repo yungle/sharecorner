@@ -1,0 +1,514 @@
+﻿body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre,
+form, fieldset, legend, button, input, textarea, th, td, section, p, span, font, div {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft yahei";
+}
+body, button, input, select, textarea { font: 12px/1.5 tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, em, var { font-style: normal; }
+code, kbd, pre, samp { font-family: "Microsoft yahei"; }
+small { font-size: 12px; }
+ul, ol { list-style: none; }
+a {
+    text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+legend { color: #fff; }
+fieldset, img { border: 0; }
+button, input, select, textarea { font-size: 100%; }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}  
+.hide {
+    display: none !important;
+}
+
+.index-background {
+    background: #f5f5f5;
+    width: 100%;
+    min-width: 300px;
+    max-width: 390px;
+    min-height: 500px;
+    max-height: 700px;
+}
+.index-logo-background {
+    margin: 0 10%;
+    width: 80%;
+    min-width: 300px;
+    max-width: 400px;
+    background: url('../images/index-logo-bg.png') no-repeat;
+    background-size: 80% ;
+}
+.index-logo {
+    margin: 30px 30%;
+    width: 40%;
+    max-width: 200px;
+}
+.index-menu-area {
+    width: 100%;
+    height: 120px;
+    max-width: 400px;
+    margin-top: 20px;
+}
+.index-menu-area-left {
+    float: left;
+    height: 120px;
+    width: 50%;
+    max-width: 200px;
+}
+.index-menu-area-rigrt {
+    float: right;
+    height: 120px;
+    width: 50%;
+    max-width: 200px;
+}
+.index-menu-item-left {
+    float: right;
+    margin-right: 20%;
+    width: 80px;
+}
+.index-menu-item-span-left {
+    float: right;
+    margin-right: 20%;
+    width: 80%;
+    text-align: right;
+    font-size: 20px;
+
+}
+.index-menu-item-rigrt {
+    float: left;
+    margin-left: 20%;
+    width: 80px;
+}
+.index-menu-item-span-right {
+    float: left;
+    margin-left: 20%;
+    width: 80%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.head {
+    background: #2373c0;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5px;
+    font-size: 23px;
+}
+.head-title {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-left: 10%;
+    height: 36px;
+    color: #ffffff;
+    text-align: center;
+    padding:12px 0;
+    font-size: 20px;
+}
+.head-icon-left {
+    position: relative;
+    float: left;
+    width: 30px;
+    margin: 15px;
+}
+.head-icon-right {
+    position: relative;
+    float: right;
+    width: 40px;
+    margin: 10px 10px 0 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+.head-icon-right img {
+    width: 40px;
+}
+.common-background {
+    background: #f5f5f5;
+    width: 100%;
+    max-height: 1500px;
+}
+
+.float-icon {
+    position: fixed;
+    left: 47px;
+    bottom: 57px;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.float-icon-img {
+    width:70px; height:70px;
+    border: 0;
+}
+
+.grow-menu {
+    margin: 10px 3%;
+    width: 94%;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+.grow-menu-icon {
+    width: 50px;
+    margin: 10px;
+    float: left;
+}
+.grow-menu-label {
+    font-size: 20px;
+    margin: 20px 20px;
+    position: absolute;
+}
+.grow-menu-select {
+    float: right;
+    width: 20px;
+    margin: 20px 15px;
+}
+
+.message-body {
+    margin: 0px 0 5px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background: #ffffff;
+    min-width: 350px;
+}
+.message-body-select {
+    float: right;
+    width: 10px;
+    margin: 15px 10px;
+    
+}
+.message-body-head-date {
+    float: left;
+    font-size: 16px;
+    height: 50px;
+    width: 90px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 10px;
+}
+.message-body-head-content {
+    float: left;
+    font-size: 16px;
+    height: 50px;
+    max-width: 160px;
+    line-height: 50px;
+    text-align: left;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.message-body-head-select {
+    float: right;
+    width: 20px;
+    margin: 5px 10px;
+}
+.message-body-head-repayed {
+    float: right;
+    font-size: 16px;
+    margin: 12px 5px 0 5px;
+}
+.message-body-head-isrepay {
+    float: right;
+    font-size: 16px;
+    color: #eec281;
+    margin: 12px 5px 0 5px;
+}
+.message-body-line {
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+}
+.message-body-message-back {
+    margin-bottom: 5px;
+    background: #ffffff;
+    height: 90px;
+    padding: 0 10px;
+}
+.message-body-message {
+    font-size: 20px;
+}
+
+.friends-body {
+    margin: 0px 0 5px 0;
+    width: 100%;
+    height: 50px;
+}
+.friends-body-head {
+    background: #ffffff;
+    width: 100%;
+    height: 50px;
+}
+.friends-body-head-date {
+    float: left;
+    font-size: 20px;
+    height: 20px;
+    margin: 10px 10px
+}
+.friends-body-head-select {
+    float: right;
+    width: 12px;
+    margin: 15px 10px 0 0;
+}
+.friends-body-head-right {
+    float: right;
+    font-size: 14px;
+    margin: 12px 5px 0 5px;
+    color: #e79e11
+}
+.friends-body-line {
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+}
+.friends-body-friends-back {
+    margin-bottom: 10px;
+    background: #ffffff;
+    height: 75px;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.friends-body-friends {
+    font-size: 20px;
+}
+
+.friend-new-item {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border: 1px #c3c3c3 solid;
+    border-left: 0;
+    border-right: 0;
+    min-width: 350px;
+}
+.friend-new-line {
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.friend-new-line-split {
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+    font-size: 16px;
+    text-align: center;
+    width: 5%;
+}
+.friend-new-line-label {
+    float: left;
+    width: 26%;
+    text-align: center;
+}
+.friend-new-line-input {
+    float: right;
+    border: 0;
+    text-align: left;
+    width: 60%;
+    outline: none;
+}
+.friend-new-area-input {
+    float: right;
+    border: 0;
+    text-align: left;
+    width: 60%;
+    outline: none;
+    height: 50px
+}
+.friend-new-area {
+    margin-bottom: 10px;
+}
+.friend-new-sub {
+    width: 50%;
+    margin: 30px 25% 40px 25%;
+    text-align: center;
+    font-size: 20px;
+    height: 60px;
+    color: #ffffff;
+    border-radius: 10px #ffffff 0;
+    outline: none;
+    background: url('../images/btnBg.png') no-repeat;
+    background-size:100% 60px;
+}
+
+.friend-new-sub1 {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 10px #ffffff 0;
+    outline: none;
+    width:100px;
+    background:#e79e11;
+    height:40px;
+}
+
+.sex-rd {
+    font-size: 16px;
+    width: 50px;
+    height: 40px;
+}
+
+.personal-info-item {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border: 1px #c3c3c3 solid;
+    border-left: 0;
+    border-right: 0;
+}
+.personal-info-item-muliti {
+    width: 100%;
+    height: 540px;
+    background: #ffffff;
+    border: 1px #66cdaa solid;
+    border-left: 0;
+    border-right: 0;
+}
+.personal-info-line {
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+    font-size: 16px;
+    padding: 0px 10px
+}
+.personal-info-line-split {
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+    font-size: 25px;
+    text-align: center;
+    width: 5%;
+}
+.personal-info-label {
+    float: left;
+    width: 26%;
+    text-align: center;
+}
+.personal-info-input {
+    height: 28px;
+    padding: 10px;
+    float: right;
+    border: 0;
+    text-align: left;
+    width: 60%;
+    outline: none;
+}
+
+.personal-info-input1 {
+    height: 28px;
+    text-align: left;
+    outline: none;
+}
+
+.tabs {
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+}
+.tabs-item {
+    width: 50%;
+    color: #e79e11;
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+}
+.tabs-item-right {
+    position: relative;
+    margin-top: -42px;
+    float: right;
+}
+.tabs-item-current {
+    color: #e79e11;
+    border-bottom: 2px solid #e79e11;
+}
+.content-item {
+    width: 100%;
+    height: 1500px;
+}
+.content-notice-item {
+    background: #ffffff;
+    width: 94%;
+    height: 180px;
+    padding: 5px 3%;
+    margin: 20px 0;
+}
+.content-notice-item-date {
+    width: 100%;
+    height: 40px;
+    font-size: 40px;
+}
+.content-notice-item-content {
+    width: 100%;
+    height: 130px;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+
+.log-title {
+    width: 100%;
+    height: 60px;
+    font-size: 50px;
+    border: 1px #000000;
+}
+.content tr td {
+    text-align: left;
+    height: 20px;
+    border: 1px #ffffff;
+    word-wrap:break-word;
+    font-size: 13px;
+    padding: 2px 0;
+}
+.content tr {
+    width: 100%;
+    margin: 10px 0
+}
+
+.mall-sub {
+    width: 70%;
+    margin: 10px 15% 10px 15%;
+    background: #e79e11;
+    text-align: center;
+    font-size: 60px;
+    height: 140px;
+    color: #ffffff;
+    border-radius: 10px;
+    outline: none;
+}
+
+.more-list {
+    width: 100%; height: 50px;  font-size: 40px;text-align: center;
+    background: url('../images/icon-more.png') no-repeat;
+    margin: 20px 0;
+    background-size: 100% 25px;
+}
+
+
+.log-line {
+    height: 40px;
+}
+.log-line-item-left {
+    float: left;
+    width: 100%;
+    padding-left: 20px;
+}
+.log-line-item-right {
+    float: left;
+    width: 100%;
+    padding-right: 20px;
+}
+.log-item {
+    width: 100%;
+    font-size: 15px;
+    background: #ffffff;
+    margin-bottom: 5px;
+}

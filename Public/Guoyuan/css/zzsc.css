@@ -1,0 +1,30 @@
+@charset "utf-8";
+*{ margin:0; padding:0; list-style:none;}
+body{ font-size:12px; text-align:left;}
+a{ text-decoration:none; color:#333;}
+a:hover{ text-decoration:none;}
+
+
+/* 本案例代码begin */
+.left_nav{  width: 126px;
+  height: auto;
+  padding: 5px;
+  display: inline-block;
+  float: left;
+  margin-top: 50px;
+}
+
+.left_nav dl dd{ width:136px; position:relative;text-align: center;margin-left: -5px;}
+.left_nav dl dd img{padding-top: 20px;}
+.left_nav dl dd .nav_right{ width:127px; height:auto; overflow:hidden; position:absolute; left:140px; top:0px;background:#b39262; display:none; opacity: 0.8;z-index: 10000;}
+.left_nav dl dd .nav_right a{ width:110px;height:30px; line-height:30px; text-align:left; color:#fff;padding-left:20px; ; display:block; float:left; white-space:nowrap;
+ text-overflow:ellipsis;
+ -o-text-overflow:ellipsis;
+ overflow: hidden;}
+.left_nav dl dd .nav_right a:hover{ width:110px;height:30px; line-height:30px; text-align:left; color:#fff;padding-left:20px; text-decoration:none;background: #98c640;}
+.left_nav dl dd a.nav_left{height:108px; line-height:108px; background:#cfa972; display:block; border-bottom:1px solid #fff;color:#3C4347; white-space:nowrap;
+ text-overflow:ellipsis;
+ -o-text-overflow:ellipsis;
+ overflow: hidden;}
+.left_nav dl dd a.nav_left:hover{background:#b49363; text-decoration:none;}
+
